@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class InteractionObject : MonoBehaviour
 {
-    [Tooltip("0:Flashlight \n 1:Gun \n 2:SecGun \n 3:SpecGun \n 4:Item \n")]
+    [Tooltip("0:Flashlight \n 1:Gun \n 2:SecGun \n 3:SpecGun \n 4:MapInteract \n")]
     [Range(0,4)]
     public int interactTag;
     public bool inventory; 
+    //inventory=true
+    //MapInteract=false
     
     void OnEnable()
     {

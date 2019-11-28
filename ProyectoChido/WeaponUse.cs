@@ -171,7 +171,7 @@ public class WeaponUse : MonoBehaviour
             break;
 
             case 4:
-            interactTag="MapInteract";
+            interactTag="Item";
             coolDown=   0;
             break;
 
