@@ -18,7 +18,7 @@ public class TurnLight : MonoBehaviour
     public void Toggle()
     {
         //sound.Play();
-        FindObjectOfType<AudioManager>().Play("Flashlight");
+        FindObjectOfType<AudioManager>().Play("Flashlight",0);
         if(OnOff){
         	ownLight.SetActive(false);
         	OnOff=false;

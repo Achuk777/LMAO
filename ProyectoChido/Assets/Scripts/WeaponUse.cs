@@ -162,7 +162,7 @@ public class WeaponUse : MonoBehaviour
 
             case 2:
             interactTag="SecGun";
-            coolDown=   5;
+            coolDown=   1;
             break;
 
             case 3:
