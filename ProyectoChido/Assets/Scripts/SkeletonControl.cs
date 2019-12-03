@@ -5,7 +5,7 @@ using UnityEngine;
 public class SkeletonControl : MonoBehaviour
 {
 
-    public float speed= 1f;
+    public float speed;
     public AreaEffector2D effector;
     public BossController bossController;
 
@@ -21,6 +21,7 @@ public class SkeletonControl : MonoBehaviour
         skeletonAnim=GetComponent<Animator>();
         body=GetComponent<Rigidbody2D>();
         player=GameObject.Find("Dweller").transform;
+        speed= Random.Range(0.5f,1f);
     }
 
     // Update is called once per frame

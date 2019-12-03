@@ -11,6 +11,7 @@ public class WeaponUse : MonoBehaviour
     public GameObject ownLight;
     public Inventory inventory;
     public Slider slider;
+    public bool equiped = false;
     //public Text text;
     
     private static float coolDownSet= 15f;
@@ -71,13 +72,14 @@ public class WeaponUse : MonoBehaviour
         }
         if(Input.GetButtonDown("Switch"))
         {
+            
             if(interactType){
                 interactType.transform.parent=null;
                 interactType.SendMessage("Hide");
             }
             GameObject aux=inventory.SwitchItem();
             if(aux){
-                
+                equiped=true;
                 interactType=aux;
                 interactType.transform.parent=arm.transform;
                 
@@ -88,9 +90,9 @@ public class WeaponUse : MonoBehaviour
                 } 
                 
                 if(spriteFlip){
-                    interactType.transform.SetPositionAndRotation( transform.localPosition +   new Vector3(-0.13f, -0.015f, 0), new Quaternion(0,180f,0,0) );
+                    interactType.transform.SetPositionAndRotation( transform.localPosition +   new Vector3(-0.12f, -0.00f, 0), new Quaternion(0,180f,0,0) );
                 } else if(!spriteFlip){
-                    interactType.transform.SetPositionAndRotation( transform.localPosition +   new Vector3(0.13f, -0.015f, 0), new Quaternion(0,0,0,0) );
+                    interactType.transform.SetPositionAndRotation( transform.localPosition +   new Vector3(0.12f, -0.00f, 0), new Quaternion(0,0,0,0) );
                 }
 
                 interactType.SetActive(true);
