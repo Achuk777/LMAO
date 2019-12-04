@@ -19,7 +19,7 @@ public class GunFire : MonoBehaviour
     {
     	//Debug.Log("Shoot");
     	Instantiate(bulletPreFab, firepoint.position, firepoint.rotation);
-    	FindObjectOfType<AudioManager>().Play(id);
+    	FindObjectOfType<AudioManager>().Play(id,0);
     	//sound.Play();
     }
 }

@@ -29,11 +29,19 @@ public class Control2D : MonoBehaviour
 
 	public BoolEvent OnCrouchEvent;
 	public Transform listener;
+	public Animator playerAnim;
+	public SpriteRenderer brazito;
+	public WeaponUse equiped;
+
+	private bool equipedB = false;
 	private bool m_wasCrouching = false;
 
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
+		playerAnim = GetComponent<Animator>();
+		equiped = GetComponent<WeaponUse>();
+		brazito.enabled=false;
 
 		if (OnLandEvent == null)
 			OnLandEvent = new UnityEvent();
@@ -46,6 +54,11 @@ public class Control2D : MonoBehaviour
 	{
 		bool wasGrounded = m_Grounded;
 		m_Grounded = false;
+		if(equiped.equiped){
+			playerAnim.SetBool("equiped",true);
+			brazito.enabled=true;
+			equipedB=true;
+		}
 
 		// The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
 		// This can be done using layers instead but Sample Assets will not overwrite your project settings.
@@ -55,6 +68,7 @@ public class Control2D : MonoBehaviour
 			if (colliders[i].gameObject != gameObject)
 			{
 				m_Grounded = true;
+				//Ya no esta saltando
 				if (!wasGrounded)
 					OnLandEvent.Invoke();
 			}
@@ -77,7 +91,6 @@ public class Control2D : MonoBehaviour
 		//only control the player if grounded or airControl is turned on
 		if (m_Grounded || m_AirControl)
 		{
-
 			// If crouching
 			if (crouch)
 			{
@@ -112,24 +125,47 @@ public class Control2D : MonoBehaviour
 			m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
 
 			// If the input is moving the player right and the player is facing left...
+			if(move!= 0){
+				playerAnim.SetBool("walking",true);
+			}
+			else if(move ==0){
+				//IDLeeeeeeeeee
+				playerAnim.SetBool("walking",false);
+			}
+
 			if (move > 0 && !m_FacingRight)
 			{
 				// ... flip the player.
-				Flip();
+				//Moviendoseeee
+				Flip();	
 			}
 			// Otherwise if the input is moving the player left and the player is facing right...
 			else if (move < 0 && m_FacingRight)
 			{
 				// ... flip the player.
+				//Moviendoseeee
 				Flip();
 			}
+			
 		}
 		// If the player should jump...
 		if (m_Grounded && jump)
 		{
+			//playerAnim.SetBool("jumping",true);
 			// Add a vertical force to the player.
+			if(!equipedB){
+				playerAnim.Play("PlayerJump");
+			}
+			else{
+				playerAnim.Play("PlayerJumpEq");
+			}
 			m_Grounded = false;
+			//Animacion Saltar
+			
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+			
+		} else{
+			//playerAnim.SetBool("jumping",false);
 		}
 	}
 

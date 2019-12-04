@@ -38,6 +38,7 @@ public class CameraMove : MonoBehaviour {
         {
             if(bigCam && zoomed){
             //_cam.orthographicSize=4;
+            offset= new Vector2(1,3);
             animCam.clip=zoomOut;
             animCam.Play();
             zoomed=false;
@@ -45,13 +46,20 @@ public class CameraMove : MonoBehaviour {
             }
             else if(bigCam && !zoomed){
             //_cam.orthographicSize=1;
+            offset= new Vector2(1,0);
             animCam.clip=zoomIn;
             animCam.Play();
             zoomed=true;
             bigCam=false;
             }
+            
+            //offset= new Vector2(1,4);
+            
             int currentX = Mathf.RoundToInt(_target.position.x);
-            if (currentX > lastX) faceLeft = false; else if (currentX < lastX) faceLeft = true;
+            if (currentX > lastX) 
+            faceLeft = false; 
+            else if (currentX < lastX) 
+            faceLeft = true;
             lastX = Mathf.RoundToInt(_target.position.x);
 
             Vector3 target;

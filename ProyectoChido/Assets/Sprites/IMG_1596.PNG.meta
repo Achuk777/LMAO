@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: 789995368e5be4691b3ac847a00f2adb
+guid: 1993b16f5f5904c5981bf63d8d98c019
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4435629867309638501
-    second: IMG_1464_0
+      213: 1507136147447172796
+    second: IMG_1596_0
   - first:
-      213: 970399952480897998
-    second: IMG_1464_1
+      213: -2246396745902700779
+    second: IMG_1596_1
   - first:
-      213: -5379408523689402961
-    second: IMG_1464_2
+      213: 8857465781731281662
+    second: IMG_1596_2
   - first:
-      213: 4256854208951784746
-    second: IMG_1464_3
-  - first:
-      213: -2324497846088838538
-    second: IMG_1464_4
+      213: 5143738730669755030
+    second: IMG_1596_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -101,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_1464_0
+      name: IMG_1596_0
       rect:
         serializedVersion: 2
-        x: 29
-        y: 1546
-        width: 194
-        height: 326
+        x: 175
+        y: 1159
+        width: 209
+        height: 314
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,20 +112,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ce6a3f7a97064c908ac43a50270368c
-      internalID: -4435629867309638501
+      spriteID: 6f83fdc8ead4341748a5cd4ccf8d3529
+      internalID: 1507136147447172796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_1464_1
+      name: IMG_1596_1
       rect:
         serializedVersion: 2
-        x: 1120
-        y: 1546
-        width: 183
-        height: 326
+        x: 400
+        y: 1174
+        width: 239
+        height: 299
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64bb56191a9384e58b18d8839a37fa61
-      internalID: 970399952480897998
+      spriteID: 79bf6d626243e42a1b51c1d20f5d775d
+      internalID: -2246396745902700779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_1464_2
+      name: IMG_1596_2
       rect:
         serializedVersion: 2
-        x: 1115
-        y: 1184
-        width: 198
-        height: 321
+        x: 170
+        y: 831
+        width: 185
+        height: 313
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,20 +154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81016f961ea7c41b7be4cbf158f92ff9
-      internalID: -5379408523689402961
+      spriteID: cfa214d03905f48a4bbbd0b92494f041
+      internalID: 8857465781731281662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_1464_3
+      name: IMG_1596_3
       rect:
         serializedVersion: 2
-        x: 1447
-        y: 823
-        width: 215
-        height: 327
+        x: 425
+        y: 844
+        width: 199
+        height: 296
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,29 +175,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1769a3c6f392f4b7a86bd13427d39bbc
-      internalID: 4256854208951784746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IMG_1464_4
-      rect:
-        serializedVersion: 2
-        x: 1476
-        y: 103
-        width: 211
-        height: 325
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36c2172f190e24b94ae665dd25e5de33
-      internalID: -2324497846088838538
+      spriteID: 97a94ebd149b5410aa72ac747b3169b4
+      internalID: 5143738730669755030
       vertices: []
       indices: 
       edges: []

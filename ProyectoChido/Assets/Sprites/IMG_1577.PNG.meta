@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: 789995368e5be4691b3ac847a00f2adb
+guid: 7dc35e11bb96d40b093c0b24c3dab43a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4435629867309638501
-    second: IMG_1464_0
+      213: -341042392866482963
+    second: IMG_1577_0
   - first:
-      213: 970399952480897998
-    second: IMG_1464_1
+      213: 7747946602049017224
+    second: IMG_1577_1
   - first:
-      213: -5379408523689402961
-    second: IMG_1464_2
+      213: -6491373097277208255
+    second: IMG_1577_2
   - first:
-      213: 4256854208951784746
-    second: IMG_1464_3
-  - first:
-      213: -2324497846088838538
-    second: IMG_1464_4
+      213: -3989202735617101425
+    second: IMG_1577_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -101,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_1464_0
+      name: IMG_1577_0
       rect:
         serializedVersion: 2
-        x: 29
-        y: 1546
-        width: 194
-        height: 326
+        x: 175
+        y: 1159
+        width: 209
+        height: 314
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,20 +112,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ce6a3f7a97064c908ac43a50270368c
-      internalID: -4435629867309638501
+      spriteID: 2b568fff7dd6042ac94627a803d6088c
+      internalID: -341042392866482963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_1464_1
+      name: IMG_1577_1
       rect:
         serializedVersion: 2
-        x: 1120
-        y: 1546
-        width: 183
-        height: 326
+        x: 400
+        y: 1174
+        width: 239
+        height: 299
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64bb56191a9384e58b18d8839a37fa61
-      internalID: 970399952480897998
+      spriteID: cab3a73253a7d4caab48cdb085d1cccd
+      internalID: 7747946602049017224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_1464_2
+      name: IMG_1577_2
       rect:
         serializedVersion: 2
-        x: 1115
-        y: 1184
-        width: 198
-        height: 321
+        x: 168
+        y: 827
+        width: 209
+        height: 314
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,20 +154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81016f961ea7c41b7be4cbf158f92ff9
-      internalID: -5379408523689402961
+      spriteID: 966d88218c87a4cd4955cc2445abaafc
+      internalID: -6491373097277208255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IMG_1464_3
+      name: IMG_1577_3
       rect:
         serializedVersion: 2
-        x: 1447
-        y: 823
-        width: 215
-        height: 327
+        x: 422
+        y: 842
+        width: 239
+        height: 299
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,29 +175,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1769a3c6f392f4b7a86bd13427d39bbc
-      internalID: 4256854208951784746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IMG_1464_4
-      rect:
-        serializedVersion: 2
-        x: 1476
-        y: 103
-        width: 211
-        height: 325
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36c2172f190e24b94ae665dd25e5de33
-      internalID: -2324497846088838538
+      spriteID: 1ec64a35b60bc4f94b6e262c86af9c28
+      internalID: -3989202735617101425
       vertices: []
       indices: 
       edges: []
